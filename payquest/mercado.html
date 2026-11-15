@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><title>PayQuest · Mercado Real</title></head><body>
+<a class="skip" href="#main">Saltar para o conteúdo</a>
+<div class="wrap">
+<header class="nav"><a class="logo d" href="index.html">PAYQUEST</a>
+<nav class="links" aria-label="Principal"><a href="index.html">Início</a><a href="perfil.html">Perfil de risco</a><a href="mercado.html" aria-current="page">Mercado Real</a><a href="conquistas.html">Conquistas</a></nav>
+<a class="hud" id="hud" href="conquistas.html" title="Ver conquistas"></a></header>
+<main id="main">
+<section class="sec" style="padding-top:20px">
+<div class="pills" role="status" aria-live="polite"><span class="pill"><i class="dot" id="dc"></i><span id="tc">Cripto: a ligar…</span></span><span class="pill"><i class="dot" id="ds"></i><span id="ts">Ações: a ligar…</span></span><span class="pill" id="upd">Sem atualização</span><button class="chip" id="retry">Tentar de novo</button></div>
+<h1 class="d" style="font-size:clamp(40px,7vw,84px)">Vê o mercado.<br><em>Depois decide.</em></h1>
+<p class="sub">Preços de cripto e ações com dados reais, mais um simulador de carteira que calcula o risco a partir do histórico. Explorar dá XP.</p>
+<div class="warn"><span class="tag">EDUCATIVO</span><span>Não é aconselhamento financeiro. Os preços podem ter atraso e os resultados passados não garantem resultados futuros. Quando uma fonte não está ligada, a página mostra dados de demonstração identificados como tal.</span></div>
+<div class="ticks" id="ticks"></div>
+<div class="grid g2">
+<div class="card"><div class="row"><div><div class="mut" id="cTitle"></div><div class="big d" id="cPrice" aria-live="off"></div></div><div class="chips" id="ivl"></div></div>
+<div class="chips" style="margin-top:12px"><button class="chip" id="bTipo">Velas</button><button class="chip on" id="bMA">Média móvel (10)</button><button class="chip on" id="bVol">Volume</button></div>
+<div class="chartbox" id="cbox"></div><div class="stats" id="cStats"></div></div>
+<aside class="card" id="det" aria-label="Detalhes do ativo"></aside>
+</div>
+<div class="grid g3">
+<div class="card"><h2 class="d">Comparador (base 100)</h2><div class="mut">Datas em comum entre os ativos escolhidos, fecho diário.</div><div class="lg" id="cmpLg"></div><div class="chartbox" id="cmp"></div></div>
+<div class="card"><h2 class="d">Risco vs. retorno</h2><div class="mut">Volatilidade diária no eixo horizontal, retorno do período no vertical.</div><div class="chartbox" id="sc"></div></div>
+</div>
+<div class="card" style="margin-bottom:22px"><h2 class="d">Simulador de carteira</h2><div class="mut">Repete o histórico real com os pesos que escolheres (reequilíbrio diário). Não prevê o futuro. Uma carteira com 3 ou mais ativos e nenhum acima de 50 % desbloqueia a insígnia Diversificador.</div>
+<div class="grid g3" style="margin:14px 0 0"><div id="pf"></div><div id="pfOut"></div></div></div>
+<div class="sechead" style="margin-top:34px"><div><h2 class="d">Aprende antes de decidir</h2><div class="mut">Lê um artigo e ganha XP.</div></div></div>
+<div class="grid gA" id="arts"></div>
+</section>
+<p class="mut">Fontes: Binance (cripto, preços em USDT) e Twelve Data (ações e ETF).</p></main><footer>PayQuest · Projeto de Gamificação e Narrativas Interativas · Conteúdo educativo, não é aconselhamento financeiro.</footer></div><script src="js/config.js"></script><script src="js/calc.js"></script><script src="js/store.js"></script><script src="js/ui.js"></script><script src="js/charts.js"></script><script src="js/api.js"></script><script src="js/market.js"></script></body></html>
